@@ -1,10 +1,10 @@
 {
-    "buildCommand": "npm run vercel-build",
-    "outputDirectory": "dist/startup-dashboard",
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/event_center/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
