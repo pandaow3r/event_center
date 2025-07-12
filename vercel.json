@@ -1,9 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "dist/event_center/browser/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
-} 
+    "buildCommand": "npm run vercel-build",
+    "outputDirectory": "dist/startup-dashboard",
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
